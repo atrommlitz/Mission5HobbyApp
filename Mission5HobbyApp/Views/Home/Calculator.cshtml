@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Calculate Consulting Costs";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Welcome to the calculator for my services!</p>
+<label>Please Enter How Many Hours of Training You Would Like</label>
+<input id="trainingHours"/>
+<br />
+<p><input type="text" class="fit-width" readonly value="My training rate: $400 per hour" size="40"></p>
+
+<button type="button" onclick="calculateEarnings()" id=totalPayButton>Calculate Total Pay</button>
+<br />
+<br />
+
+<div id="totalPay"></div>
+
+<script src="~/js/site.js"></script>
